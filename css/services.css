@@ -1,0 +1,368 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-color: rgb(188, 150, 222);
+    background-position: center;
+    /* height:200%;              areeba  */
+    height: 800%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 80px;
+    /* Adjust based on the height of your navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    /* Set a default font size */
+    margin: 0;
+    font-family: "Alex Brush", serif;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: "Adamina", serif;
+}
+
+nav ul li a:hover {
+    font-style: bold;
+    color: blueviolet;
+}
+
+.progress {
+    background-color: blueviolet;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 90vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+/* Slider container */
+.slider {
+    /* margin: 50px auto; */
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/* Track the slides */
+.slide-track {
+    display: flex;
+    flex-direction: row;
+    width: calc(300px * 28);
+    /* Width * number of images */
+    animation: scroll 60s linear infinite;
+    /* Adjust the duration as needed */
+}
+
+/* Each slide */
+.slide img {
+    width: 1000px;
+    height: 800px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframes for animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px * 14));
+        /* Negative width * number of images / 2 */
+    }
+}
+
+.block {
+    font-family: "Ephesis", serif;
+    font-weight: unset;
+    font-size: xx-large;
+}
+
+footer {
+    height: 10vh;
+    background-color: rgb(79, 8, 131);
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.social-icons a img:hover {
+    height: 20px;
+    width: 20px;
+    filter: brightness(0.4);
+}
+
+/* .first-block{
+    display:flex;
+}
+.first-block img{
+    height: 40vh;
+    width: auto;
+    border:solid grey;
+    border-radius: 3px;
+} */
+.designs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    /* Required for pseudo-elements */
+}
+
+.left-design {
+    flex: 1;
+    text-align: center;
+}
+
+.center-images {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .second_imgs img{
+    height: 40vh;
+    width: auto;
+    border:solid grey;
+    border-radius: 3px;
+    transition: transform 0.3s
+}
+.second_imgs img:hover { 
+    transform: scale(3);
+}  */
+.second-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(155, 100, 207);
+}
+
+.left-design {
+    flex: 1;
+    text-align: center;
+}
+
+.center-images {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.second_imgs img {
+    height: 40vh;
+    width: auto;
+    border: solid grey;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.second_imgs img:hover {
+    transform: scale(2);
+}
+
+.right-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.designs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(155, 100, 207);
+    position: relative;
+    /* Required for pseudo-elements */
+}
+
+.left-design {
+    flex: 1;
+    text-align: center;
+}
+
+.center-images {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.first-block img {
+    height: 40vh;
+    width: auto;
+    border: solid grey;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}
+
+.first-block img:hover {
+    transform: scale(2);
+    /* Scale up the image */
+}
+
+/* Glow effect */
+.first-block img::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ff007b, #ff6600, #fffb00, #33cc33, #33ccff, #ff33cc);
+    border-radius: 3px;
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.7;
+    animation: glowing 2s infinite linear;
+}
+
+.right-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+@media (max-width: 975px) {
+
+    .content h1,
+    .designs-box h2,
+    .second-block h2 {
+        text-align: center;
+        /* Center the headings */
+    }
+
+    .block p,
+    .designs-box p,
+    .second-block p {
+        text-align: center;
+        /* Center the paragraphs */
+    }
+
+    .designs-box,
+    .second-block {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        padding: 10px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .first-block,
+    .second_imgs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        /* Reduce gap for smaller screens */
+    }
+
+    .first-block img,
+    .second_imgs img {
+        height: 30vh;
+        width: 48%;
+        /* Display two images per row */
+    }
+
+    .right-text {
+        padding-left: 0;
+        /* Remove left padding */
+        text-align: center;
+        /* Center the text */
+        width: 100%;
+        margin-top: 10px;
+    }
+}

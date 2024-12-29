@@ -1,0 +1,186 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-color: rgb(188, 150, 222);
+    background-position: center;
+    height: 1700%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 80px;
+    /* Adjust based on the height of your navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: "Adamina", serif;
+}
+
+nav ul li a:hover {
+    font-style: bold;
+    color: blueviolet;
+}
+
+.progress {
+    background-color: blueviolet;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 90vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255); */
+}
+
+.portfolio-item {
+    border: 10px solid black;
+    margin: 20px;
+    width: 1200px;
+    height: 1600px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
+    /* Glow effect */
+
+}
+
+.portfolio-item h2 {
+    /* Set a default font size */
+    margin: 0;
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.content h1 {
+    /* Set a default font size */
+    margin: 0;
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.portfolio-item p {
+    /* Set a default font size */
+    margin: 0;
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.portfolio-item img {
+    height: 80%;
+    width: 100%;
+}
+
+footer {
+    height: 10vh;
+    background-color: rgb(79, 8, 131);
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a img:hover {
+    height: 20px;
+    width: 20px;
+    filter: brightness(0.4);
+}
+
+.social-icons img {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 1200px) {
+    .portfolio-item img{
+        width: 70%;
+        /* Adjust width for smaller screens */
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+    }
+}
+
+@media (max-width: 2500px) {
+    .portfolio-item  {
+        width: 90%;
+        height: auto;
+    }
+}

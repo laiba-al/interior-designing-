@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    /* background-image: url('https://cdn-desktop-ap-media.osp.opera.software/images/ffa8cf5e-c21a-11ef-95c2-fdec29343a99/1735060747538/sample_0.jpg'); */
+    /* Replace with your image URL */
+    background-color: rgb(188, 150, 222);
+    background-size: cover;
+    background-position: center;
+    height: 110%;  
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    /* Default to column for mobile view */
+    align-items: center;
+    /* Center items */
+}
+
+nav ul li {
+    margin: 0;
+    margin-bottom: 1em;
+    /* Add margin for spacing */
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: "Adamina", serif;
+    /* Set a default font size */
+}
+
+nav ul li a:hover {
+    font-style: bold;
+    color: blueviolet;
+}
+header h1 {
+    /* Set a default font size */
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Alex Brush", serif;
+    font-weight: 300;
+    font-size: 80px;
+    color: rgb(15, 14, 14);
+}
+
+.container {
+    margin-top: 10px; /* Ensure content doesn't hide under fixed navbar */
+    /* padding: 30px; */
+    font-family: "Alex Brush", serif;
+}
+
+.about-section, .team-section, .mission-section, .testimonials-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    margin: 40px auto;
+    color: white; /* Ensure content text color is white */
+    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.about-section:hover, .team-section:hover, .mission-section:hover, .testimonials-section:hover {
+    box-shadow: 0 0 15px 10px rgba(8, 4, 4, 0.5); /* Glow effect */
+}
+
+
+.about-section h2, .team-section h2, .mission-section h2, .testimonials-section h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-section p, .team-section p, .mission-section p, .testimonials-section p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 10vh;
+    background-color: rgb(79, 8, 131);
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* .social-icons a:hover {
+    color: #FFD700; 
+} */
+.social-icons a:hover{
+    
+        height: 20px;
+        width: 20px;
+        filter: brightness(0.4);
+    
+}

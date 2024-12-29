@@ -1,0 +1,114 @@
+.background {
+    background-image: url("../img/sample.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-color: darkgray;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+}
+
+header h1 {
+    /* Set a default font size */
+    margin: 0px 20px;
+    font-family: "Alex Brush", serif;
+    font-weight: 300;
+    font-size: 80px;
+    color: white;
+}
+
+header p {
+    /* Set a default font size */
+    margin: 0px;
+    /* font-family: "Alex Brush", serif; */
+    /* font-family: "Lora", serif; */
+    font-family: "Felipa", serif;
+    font-weight: 100;
+    font-size: 32px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    /* margin-top: 10px; */
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #5d3f8e;
+    /* Slightly darker color for hover effect */
+}
+
+footer {
+    height: 40vh;
+    background-color: rgb(79, 8, 131);
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+@media (max-width: 740px) {
+    .contact-form {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 975px) {
+
+    header h1,
+    header p {
+        /* border-left: 2px solid white; */
+        /* border-right: 2px solid white; */
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 851px) {
+    .contact-form {
+        margin-bottom: 20px;
+    }
+}
